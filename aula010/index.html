@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div id="msg">
+            Interaja aqui
+        </div>
+ <script>
+   
+  var a = window.document.querySelector
+  ('#msg' )
+
+  a.addEventListener('click', clicar)
+  a.addEventListener('mouseenter', entrar)
+  a.addEventListener('mouseleave', saiu)
+
+   function clicar(){
+     a.innerHTML = 'Você ativou uma função!'
+   }
+
+   function entrar(){
+     a.innerHTML = 'entrou'
+     a.style.background = 'cadetblue'   
+   }
+
+   function saiu(){
+     a.innerHTML = 'saiu'   
+     a.style.background = 'red'
+   }
+ </script>
+
+</body>
+</html>

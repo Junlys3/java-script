@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+
+
+div#msg{
+font: normal 2em Arial;
+background-color: cadetblue;
+color: white;
+width: 200px;
+height: 200px;
+line-height: 200px;
+text-align: center;
+
+}

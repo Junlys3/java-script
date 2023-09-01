@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>Somando e multiplicando valores </h1>
+    <input type="number" name="nu1" id="nu1">
+    <input type="number" name="nu2" id="nu2">
+    <input type="button" value="Somar" id="somar">
+    <div id="resul">Resultado</div>
+
+
+    <input type="number" name="mul" id="mul">
+    <input type="number" name="mul1" id="mul1">
+    <input type="button" value="Multiplicar" id="button2">
+    <div id="resulm">Resultado</div>
+
+    <script>
+      var button = window.document.querySelector('#somar')
+      var button2 = window.document.querySelector('#button2')
+      button.addEventListener('click', somar)
+      button2.addEventListener('click', multiplicar)
+
+      function somar () {
+       var nu1 = window.document.querySelector('#nu1')
+       var nu2 = window.document.querySelector('#nu2')
+       var resul = window.document.querySelector('#resul')
+       var ns1 = Number(nu1.value)
+       var ns2 = Number(nu2.value)
+       var s = ns1 + ns2
+       resul.innerHTML = s
+
+      }
+
+      function multiplicar (){
+        var mul = window.document.querySelector('#mul')
+        var mul1 = window.document.querySelector('#mul1')
+        var resulm = window.document.querySelector('#resulm')
+        var resulm1 = Number(mul.value)
+        var resulm2 = Number(mul1.value)
+        var multipl = resulm1 * resulm2
+        resulm.innerHTML = multipl
+
+
+      }
+
+
+    </script>
+</body>
+</html>

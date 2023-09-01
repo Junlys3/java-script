@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dom</title>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript</p>
+    <div>Clique Aqui</div>
+    <div id="msg">Seletor de Id</div>
+    <script>
+    var p1 = window.document.getElementsByTagName('p')[0]
+      window.document.write(p1.innerText)
+      var d = window.document.querySelector('#msg')
+      d.style.background = 'green'
+      d.innerHTML = 'estou aguardando'
+    </script>
+</body>
+</html>
