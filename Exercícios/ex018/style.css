@@ -1,0 +1,30 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+select{
+    width: 150px;
+    height: 150px;
+}
+#finalizar{
+    margin: 0px;
+    
+}
+h1{
+    text-align: center;
+    font-size: 2.2em;
+    color: white;
+}
+body{
+    background-color: #3D82D5;
+}
+main{
+    background-color: white;
+    width: 500px;
+  
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+input{
+    margin-top: 12px;
+}
